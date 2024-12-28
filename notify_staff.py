@@ -67,8 +67,9 @@ def app():
     if specific_faculty_selected:
           faculties = fetch_faculties()
           faculty_options = [faculty[0] for faculty in faculties]
-          faculty_names_dict = {faculty[1] for faculty in faculties}
-          recipient_username = st.selectbox("Select Faculty", faculty_names_dict, key="faculty_select_faculty")
+          faculty_names_dict = {faculty[0]: faculty[1] for faculty in faculties}
+          recipient_username = st.selectbox("Select Faculty", list(faculty_names_dict.values()), key="faculty_select_faculty")
+          recipient_username = list(faculty_names_dict.keys())[list(faculty_names_dict.values()).index(recipient_username)]
 
     with st.form("notify_faculty_form"):
         message = st.text_area("Message", key="faculty_message")
@@ -109,11 +110,11 @@ def app():
 
     notifications = fetch_notifications()
     if notifications:
+        faculties = fetch_faculties()
+        faculty_names_dict = {faculty[0]: faculty[1] for faculty in faculties}
         for notification in notifications:
             col1, col2, col3, col4 = st.columns([2, 4, 3, 2])
             with col1:
-                faculties = fetch_faculties()
-                faculty_names_dict = {faculty[0]: faculty[1] for faculty in faculties}
                 st.write(faculty_names_dict.get(notification[1], "N/A"))  # Recipient
             with col2:
                 st.write(notification[2])  # Message
@@ -127,3 +128,6 @@ def app():
 # Main routing logic
 if "page" not in st.session_state:
     st.session_state.page = "main"
+
+if __name__ == '__main__':
+    app()
