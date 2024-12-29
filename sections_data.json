@@ -1,0 +1,149 @@
+{
+    "test": [
+        {
+            "role": "user",
+            "content": "hi"
+        },
+        {
+            "role": "assistant",
+            "content": "I am not a general chatbot and cannot help with queries that do not relate to Streamlit."
+        }
+    ],
+    "test2": [
+        {
+            "role": "user",
+            "content": "what can you do?"
+        },
+        {
+            "role": "assistant",
+            "content": "I am Grok, a helpful chatbot specifically designed to assist with queries related to Streamlit. I can provide information, guidance, and code examples related to Streamlit, a popular Python library for creating interactive web applications. If you have any questions or need assistance with Streamlit, feel free to ask!"
+        },
+        {
+            "role": "user",
+            "content": "what do you mean"
+        },
+        {
+            "role": "assistant",
+            "content": "I am Grok, a helpful chatbot specifically designed to assist with queries related to Streamlit. If you have any questions or need assistance with Streamlit, feel free to ask!"
+        },
+        {
+            "role": "user",
+            "content": "what is streamlit"
+        },
+        {
+            "role": "assistant",
+            "content": "Streamlit is an open-source Python library that allows you to create interactive web applications for data science and machine learning projects. It provides a simple and intuitive way to turn your data scripts into shareable web apps with minimal effort. With Streamlit, you can easily add widgets, charts, tables, and other interactive elements to your app, making it easier to explore and present your data. It's a powerful tool for data scientists and developers who want to quickly prototype and share their work with others."
+        },
+        {
+            "role": "user",
+            "content": "what are the uses of streamlit?"
+        },
+        {
+            "role": "assistant",
+            "content": "Streamlit has a wide range of uses in data science and machine learning projects. Some of the main uses of Streamlit include:\n\n1. **Data Exploration and Visualization**: Streamlit allows you to create interactive web apps that enable you to explore and visualize your data. You can easily add charts, graphs, and tables to your app, making it easier to gain insights from your data.\n\n2. **Prototyping and Sharing**: With Streamlit, you can quickly prototype your data science projects and share them with others. It's a great tool for collaborating with team members or presenting your work to stakeholders.\n\n3. **Machine Learning Model Deployment**: Streamlit can be used to deploy machine learning models as interactive web apps. You can create apps that allow users to input data and get predictions from your models in real-time.\n\n4. **Dashboard Creation**: Streamlit is perfect for creating interactive dashboards that display key metrics and KPIs. You can build custom dashboards tailored to your specific needs and easily update them as your data changes.\n\n5. **Educational Purposes**: Streamlit is widely used in educational settings to teach data science and machine learning concepts. It allows students to create interactive apps to explore and understand data in a hands-on way.\n\nOverall, Streamlit is a versatile tool that can be used for a variety of purposes in the field of data science and machine learning."
+        }
+    ],
+    "test3": [],
+    "main": [
+        {
+            "role": "user",
+            "content": "what is streamliter?"
+        },
+        {
+            "role": "assistant",
+            "content": "Streamlit is an open-source Python library used for creating interactive web applications for data science and machine learning projects. It allows users to easily turn data scripts into shareable web apps with minimal coding. With Streamlit, you can create interactive visualizations, add widgets, and build dashboards to showcase your data and models. It simplifies the process of building and sharing data-driven applications, making it a popular choice among data scientists and developers."
+        },
+        {
+            "role": "user",
+            "content": "clear the history"
+        },
+        {
+            "role": "assistant",
+            "content": "I am not a general chatbot and cannot help with queries that do not relate to Streamlit."
+        },
+        {
+            "role": "user",
+            "content": "Give me pranav's student details"
+        },
+        {
+            "role": "user",
+            "content": "Give me pranav's student details"
+        },
+        {
+            "role": "user",
+            "content": "Give me student pranav's  details"
+        },
+        {
+            "role": "assistant",
+            "content": "```sql\nSELECT * FROM studentTable WHERE username = 'pranav';\n```"
+        },
+        {
+            "role": "user",
+            "content": "Give me student pranav's details"
+        },
+        {
+            "role": "assistant",
+            "content": "```sql\nSELECT * FROM studentTable WHERE username = 'pranav';\n```"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty fullnames"
+        },
+        {
+            "role": "assistant",
+            "content": "Query executed and here is the result"
+        },
+        {
+            "role": "user",
+            "content": "Give me student pranav's attendance details"
+        },
+        {
+            "role": "assistant",
+            "content": "```sql\nSELECT * FROM attendanceTable WHERE username = 'pranav';\n```"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty fullnames"
+        },
+        {
+            "role": "assistant",
+            "content": "```sql\nSELECT full_name FROM facultyTable;\n```"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty fullnames"
+        },
+        {
+            "role": "assistant",
+            "content": "```sql\nSELECT full_name FROM facultyTable;\n```"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty fullnames"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty fullnames"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | full_name   |\n|---:|:------------|\n|  0 | david       |\n|  1 | Muqtadar    |\n|  2 | Mustafa     |"
+        },
+        {
+            "role": "user",
+            "content": "Give me student pranav details"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | username   | email           | password   | full_name   |   mobile_number | address   |   year_of_joining | branch_code   |   current_semester |   cgpa |\n|---:|:-----------|:----------------|:-----------|:------------|----------------:|:----------|------------------:|:--------------|-------------------:|-------:|\n|  0 | pranav     | pranav@mail.com | pranav     | pranav      |      9999999999 | hyd       |              2021 | CSE           |                  7 |      9 |"
+        },
+        {
+            "role": "user",
+            "content": "Give me attendance of pranav"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | username   | course_code   | attendance   | date       |\n|---:|:-----------|:--------------|:-------------|:-----------|\n|  0 | pranav     | CS101         | Present      | 2023-09-01 |\n|  1 | pranav     | CS101         | Absent       | 2023-09-02 |\n|  2 | pranav     | CS102         | Present      | 2023-09-01 |\n|  3 | pranav     | CS102         | Present      | 2023-09-02 |"
+        }
+    ]
+}

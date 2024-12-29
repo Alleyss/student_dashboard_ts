@@ -11,8 +11,11 @@ import marks
 import attendance
 import notify_staff
 import notify_student
+import chatbot
+from api_client import get_streaming_chat_response
+from utils import load_sections, save_sections, add_new_section, get_section_conversation, add_message_to_section
 
-# Authenticate user
+# Initialize session state for tracking login
 def authenticate_student(username, password):
     conn = sqlite3.connect('instance/students.db')  # Path to your SQLite DB
     cur = conn.cursor()
@@ -83,9 +86,6 @@ def main():
                     st.success("Registration successful! You can now log in.")
 
     else:  # If logged in, show the app dashboard
-        st.subheader("Student Dashboard")
-        st.write("Welcome to your student dashboard!")
-
         # Now instantiate and run the MultiApp
         app = MultiApp()  # Instantiate the MultiApp class
 
@@ -99,12 +99,14 @@ def main():
         app.add_app("Attendance", attendance.app)
         app.add_app("Notify Staff", notify_staff.app)
         app.add_app("Notify Student", notify_student.app)
+        app.add_app("Open Chatbot", chatbot.app)
 
         app.add_app("Log Out", MultiApp.logout)
 
         # Run the app with the selected page
         app.run()
-
+        
+        
 # Run the app
 if __name__ == "__main__":
     main()
