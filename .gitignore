@@ -1,1 +1,5 @@
 venv
+sections_data.json
+instance
+.env
+__pycache__

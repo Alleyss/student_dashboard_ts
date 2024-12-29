@@ -144,6 +144,14 @@
         {
             "role": "assistant",
             "content": "|    | username   | course_code   | attendance   | date       |\n|---:|:-----------|:--------------|:-------------|:-----------|\n|  0 | pranav     | CS101         | Present      | 2023-09-01 |\n|  1 | pranav     | CS101         | Absent       | 2023-09-02 |\n|  2 | pranav     | CS102         | Present      | 2023-09-01 |\n|  3 | pranav     | CS102         | Present      | 2023-09-02 |"
+        },
+        {
+            "role": "user",
+            "content": "Give me marks of pranav"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | username   | course_code   | ExamType   |   marks_obtained |   max_marks |\n|---:|:-----------|:--------------|:-----------|-----------------:|------------:|\n|  0 | pranav     | CS101         | Midterm    |               80 |          100 |\n|  1 | pranav     | CS101         | Final      |               90 |          100 |\n|  2 | pranav     | CS102         | Midterm    |               75 |          100 |\n|  3 | pranav     | CS102         | Final      |               85 |          100 |"
         }
     ]
 }

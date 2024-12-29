@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 #XAI_API_KEY=xai-1f8kqj0BkzM1lEAXwmCtERosUjydF0HDNPae5wUTp0ez0TtA31LPEnfdulVmPMgPtJcUxJIMaRI6Nmjd
 XAI_API_KEY = os.getenv("XAI_API_KEY")
 client = OpenAI(
