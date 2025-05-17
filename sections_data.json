@@ -152,6 +152,118 @@
         {
             "role": "assistant",
             "content": "|    | username   | course_code   | ExamType   |   marks_obtained |   max_marks |\n|---:|:-----------|:--------------|:-----------|-----------------:|------------:|\n|  0 | pranav     | CS101         | Midterm    |               80 |          100 |\n|  1 | pranav     | CS101         | Final      |               90 |          100 |\n|  2 | pranav     | CS102         | Midterm    |               75 |          100 |\n|  3 | pranav     | CS102         | Final      |               85 |          100 |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all student fullnames"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | full_name   |\n|---:|:------------|\n|  0 | pranav      |\n|  1 | test        |\n|  2 | test2       |\n|  3 | test3       |\n|  4 | tester      |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty details from facultyTable"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | faculty_code   | full_name   | email             | password   |   cabin_number | specialization   |\n|---:|:---------------|:------------|:------------------|:-----------|---------------:|:-----------------|\n|  0 | FAC001         | david       | david@mail.com    | david      |              1 | cs               |\n|  1 | FAC002         | Muqtadar    | muqtadar@mail.com | muqtadar   |              2 | ai               |\n|  2 | FAC003         | Mustafa     | mustafa@mail.com  | mustafa    |              3 | Gen AI           |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all faculty details from facultyTable"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | faculty_code   | full_name   | email             | password   |   cabin_number | specialization   |\n|---:|:---------------|:------------|:------------------|:-----------|---------------:|:-----------------|\n|  0 | FAC001         | david       | david@mail.com    | david      |              1 | cs               |\n|  1 | FAC002         | Muqtadar    | muqtadar@mail.com | muqtadar   |              2 | ai               |\n|  2 | FAC003         | Mustafa     | mustafa@mail.com  | mustafa    |              3 | Gen AI           |\n|  3 | FAC004         | Mukesh      | mukesh@mail.com   | mukesh     |             13 | ece              |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all student data"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | username   | email           | password   | full_name   |   mobile_number | address   |   year_of_joining | branch_code   |   current_semester |   cgpa |\n|---:|:-----------|:----------------|:-----------|:------------|----------------:|:----------|------------------:|:--------------|-------------------:|-------:|\n|  0 | pranav     | pranav@mail.com | pranav     | pranav      |      9999999999 | hyd       |              2021 | CSE           |                  7 |    9   |\n|  1 | test       | test@mail.com   | test       | test        |      8888888888 | hyd       |              2024 | CSE           |                  1 |    8.2 |\n|  2 | test2      | test2@mail.com  | test2      | test2       |      7777777777 | hyd       |              2022 | EEE           |                  5 |    7.3 |\n|  3 | test3      | test3@mail.com  | test3      | test3       |      6666666666 | hyd       |              2023 | ECE           |                  3 |    9   |\n|  4 | tester     | tester@mail.com | tester     | tester      |      5555555555 | hyd-2     |              2022 | EEE           |                  5 |   10   |"
+        },
+        {
+            "role": "user",
+            "content": "Add a new branch with branch_code CIVIL branch name Civil Engineering."
+        },
+        {
+            "role": "assistant",
+            "content": "No results found"
+        },
+        {
+            "role": "user",
+            "content": "Add a new branch with branch_code CIVIL branch name Civil Engineering."
+        },
+        {
+            "role": "assistant",
+            "content": "No results found"
+        },
+        {
+            "role": "user",
+            "content": "Add a new branch with branch_code CIVIL branch_name Civil Engineering."
+        },
+        {
+            "role": "assistant",
+            "content": "No results found"
+        },
+        {
+            "role": "user",
+            "content": "Add a new branch with branch_code CIVIL branch_name Civil Engineering."
+        },
+        {
+            "role": "assistant",
+            "content": "No results found"
+        },
+        {
+            "role": "user",
+            "content": "Give me details of marks of all students"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | username   | full_name   | course_code   | ExamType   |   marks_obtained |   max_marks |\n|---:|:-----------|:------------|:--------------|:-----------|-----------------:|------------:|\n|  0 | Newstudent | student     | MAT1001       | slip test  |             10   |          10 |\n|  1 | pranav     | pranav      | CSE1001       | cat1       |             40   |          50 |\n|  2 | pranav     | pranav      | CSE1001       | cat2       |             32   |          50 |\n|  3 | pranav     | pranav      | CSE1001       | fat        |             42.5 |          60 |\n|  4 | test       | test        | CSE1001       | cat1       |             10   |          50 |\n|  5 | test       | test        | CSE1001       | cat2       |             20   |          50 |\n|  6 | test       | test        | CSE1001       | fat        |             30   |          60 |\n|  7 | test2      | test2       | AI1001        | final      |             78   |         100 |\n|  8 | test2      | test2       | AI1001        | pre final  |             80   |         100 |\n|  9 | test3      | test3       | AI1001        | final      |             80   |         100 |\n| 10 | test3      | test3       | AI1001        | pre final  |             91   |         100 |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all student fullnames"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | full_name   |\n|---:|:------------|\n|  0 | pranav      |\n|  1 | test        |\n|  2 | test2       |\n|  3 | test3       |\n|  4 | tester      |\n|  5 | student     |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all courses?"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | course_code   | course_name                      |   credits | course_instructor_code   | branch_code   |\n|---:|:--------------|:---------------------------------|----------:|:-------------------------|:--------------|\n|  0 | CSE1001       | Introduction to Computer Science |         4 | FAC001                   | CSE           |\n|  1 | CSE1002       | C Programming                    |         4 | FAC001                   | CSE           |\n|  2 | AI1001        | AI                               |         2 | FAC002                   | CSE           |\n|  3 | GENAI1001     | Gen AI                           |         4 | FAC003                   | CSE           |\n|  4 | MAT1001       | Calculus                         |         2 | FAC004                   | CSE           |"
+        },
+        {
+            "role": "user",
+            "content": "Give me all courses"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | course_code   | course_name                      |   credits | course_instructor_code   | branch_code   |\n|---:|:--------------|:---------------------------------|----------:|:-------------------------|:--------------|\n|  0 | CSE1001       | Introduction to Computer Science |         4 | FAC001                   | CSE           |\n|  1 | CSE1002       | C Programming                    |         4 | FAC001                   | CSE           |\n|  2 | AI1001        | AI                               |         2 | FAC002                   | CSE           |\n|  3 | GENAI1001     | Gen AI                           |         4 | FAC003                   | CSE           |"
+        },
+        {
+            "role": "user",
+            "content": "Add a new branch with branch_code CIVIL and branch_name Civil Engineering"
+        },
+        {
+            "role": "assistant",
+            "content": "No results found"
+        },
+        {
+            "role": "user",
+            "content": "Give me marks of pranav"
+        },
+        {
+            "role": "assistant",
+            "content": "|    | username   | course_code   | ExamType   |   marks_obtained |   max_marks |\n|---:|:-----------|:--------------|:-----------|-----------------:|------------:|\n|  0 | pranav     | CSE1001       | cat1       |             40   |          50 |\n|  1 | pranav     | CSE1001       | cat2       |             32   |          50 |\n|  2 | pranav     | CSE1001       | fat        |             42.5 |          60 |"
         }
     ]
 }

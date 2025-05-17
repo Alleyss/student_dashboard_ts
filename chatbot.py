@@ -53,7 +53,10 @@ def app():
                   cursor = conn.cursor()
                   cursor.execute(sql_query)
                   results = cursor.fetchall()
+                  conn.commit()
                   conn.close()
+                  
+                #   conn.commit()
 
                   if results:
                       df = pd.DataFrame(results, columns=[description[0] for description in cursor.description])
